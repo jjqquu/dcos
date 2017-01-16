@@ -18,6 +18,7 @@ pushd "/pkg/src/nginx"
   --without-mail_imap_module \
   --without-mail_smtp_module \
   --with-http_ssl_module \
+  --with-http_auth_request_module \
   --with-luajit
 
 make -j$NUM_CORES
